@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+<div class="container">
+    <h1>STOPWATCH</h1>
+    <br><br>
+    <table border="1" cellspacing="0" id="table01">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>
+                <h2 id="timerLabel1">00:00:00</h2>
+                <br>
+                <input type="button" onclick="start_stop(this)" value="START" id="start1">
+                <input type="button" onclick="reset(this)" value="RESET" id="reset1">
+            </td>
+            <td>
+                <h2 id="timerLabel2">00:00:00</h2>
+                <br>
+                <input type="button" onclick="start_stop(this)" value="START" id="start2">
+                <input type="button" onclick="reset(this)" value="RESET" id="reset2">
+            </td>
+            <td>
+                <h2 id="timerLabel3">00:00:00</h2>
+                <br>
+                <input type="button" onclick="start_stop(this)" value="START" id="start3">
+                <input type="button" onclick="reset(this)" value="RESET" id="reset3">
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <table id="table02">
+        <tr>
+            <td><button onclick="location.href='index.html'" id="resetAllBtn">RESET</button></td>
+            <td><input type="button" onclick="moveAll(this)" value="START" id="moveAllBtn"></td>
+        </tr>
+    </table>
+     
+    <script src="stopwatch.js"></script>
+    
+</div>
+</body>
+</html>
